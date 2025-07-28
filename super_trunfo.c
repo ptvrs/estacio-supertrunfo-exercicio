@@ -3,40 +3,40 @@
 
 int main() //função principal do programa
 {
-    char estado[50]; // Variável para armazenar o estado
-    char codigo[10]; // Variável para armazenar o código
-    char nome_da_cidade[50]; // Variável para armazenar o nome da cidade
-    int populacao; // Variável para armazenar a população
-    float area; // Variável para armazenar a área
-    float PIB;  // Variável para armazenar o PIB
-    int numero_de_pontos_turisticos;    // Variável para armazenar o número de pontos turísticos
+    char estado[50];
+    char codigo[10];
+    char nome_da_cidade[50];
+    int populacao;
+    float area;
+    float PIB;
+    int numero_de_pontos_turisticos;
 
-    printf("Inserir Estado: "); // Solicita ao usuário o estado
-    fgets(estado, sizeof(estado), stdin); // Lê a entrada do usuário
+    printf("Inserir Estado: ");
+    fgets(estado, sizeof(estado), stdin);
     estado[strcspn(estado, "\n")] = 0; // Remove newline
 
-    printf("Inserir Código: "); // Solicita ao usuário o código
-    fgets(codigo, sizeof(codigo), stdin); // Lê a entrada do usuário
-    codigo[strcspn(codigo, "\n")] = 0; // Remove newline
+    printf("Inserir Código: ");
+    fgets(codigo, sizeof(codigo), stdin);
+    codigo[strcspn(codigo, "\n")] = 0;
 
-    printf("Inserir Nome da Cidade: "); // Solicita ao usuário o nome da cidade
-    fgets(nome_da_cidade, sizeof(nome_da_cidade), stdin);   // Lê a entrada do usuário
-    nome_da_cidade[strcspn(nome_da_cidade, "\n")] = 0; // Remove newline
+    printf("Inserir Nome da Cidade: ");
+    fgets(nome_da_cidade, sizeof(nome_da_cidade), stdin);
+    nome_da_cidade[strcspn(nome_da_cidade, "\n")] = 0;
 
-    printf("Inserir População: "); // Solicita ao usuário a população
-    scanf("%d", &populacao);    // Lê a entrada do usuário
+    printf("Inserir População: ");
+    scanf("%d", &populacao);
 
-    printf("Inserir Área: ");   // Solicita ao usuário a área
-    scanf("%f", &area);  // Lê a entrada do usuário   
+    printf("Inserir Área: ");
+    scanf("%f", &area);
 
-    printf("Inserir PIB: "); // Solicita ao usuário o PIB
-    scanf("%f", &PIB); // Lê a entrada do usuário
- 
-    printf("Inserir Número de Pontos Turísticos: "); // Solicita ao usuário o número de pontos turísticos
-    scanf("%d", &numero_de_pontos_turisticos); // Lê a entrada do usuário
+    printf("Inserir PIB: ");
+    scanf("%f", &PIB);
+
+    printf("Inserir Número de Pontos Turísticos: ");
+    scanf("%d", &numero_de_pontos_turisticos);
 
     // Exibe os dados inseridos
-    printf("\n--- Dados Inseridos ---\n");  // Exibe os dados inseridos
+    printf("\n--- Dados Inseridos ---\n");
     printf("Estado: %s\n", estado);
     printf("Código: %s\n", codigo);
     printf("Nome da Cidade: %s\n", nome_da_cidade);
